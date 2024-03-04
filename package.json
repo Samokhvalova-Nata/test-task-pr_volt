@@ -29,7 +29,6 @@
   },
   "eslintConfig": {
     "extends": [
-      "@wemake-services/javascript",
       "react-app",
       "react-app/jest"
     ]

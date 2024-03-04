@@ -1,7 +1,12 @@
+import { Toaster } from "react-hot-toast"
+import { AppBar } from "./AppBar/app-bar"
+
 export const App = () => {
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+    <>
+      <AppBar/>
+      {/* <TaskList/> */}
+      <Toaster position="top-right" reverseOrder={false} />
+    </>
   )
 }

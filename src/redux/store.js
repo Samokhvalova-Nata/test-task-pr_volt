@@ -17,18 +17,17 @@ export const store = configureStore({
     tasks: persistedTaskReducer,
     filters: filtersReducer,
   },
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware({
-		serializableCheck: {
-			ignoredActions: [
-				FLUSH,
-				REHYDRATE,
-				PAUSE,
-				PERSIST,
-				PURGE,
-				REGISTER,
-			  ],
-		  },
-	  }),
-})
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware({ serializableCheck: {
+	  ignoredActions: [
+		  FLUSH,
+			REHYDRATE,
+			PAUSE,
+			PERSIST,
+			PURGE,
+			REGISTER,
+		],
+	},
+	}),
+  })
 
 export const persistor = persistStore(store)
