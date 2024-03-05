@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/test-task-pr_volt/static/css/main.f564d487.css",
-    "main.js": "/test-task-pr_volt/static/js/main.f63ef8ab.js",
+    "main.js": "/test-task-pr_volt/static/js/main.a5b96c23.js",
     "index.html": "/test-task-pr_volt/index.html",
     "main.f564d487.css.map": "/test-task-pr_volt/static/css/main.f564d487.css.map",
-    "main.f63ef8ab.js.map": "/test-task-pr_volt/static/js/main.f63ef8ab.js.map"
+    "main.a5b96c23.js.map": "/test-task-pr_volt/static/js/main.a5b96c23.js.map"
   },
   "entrypoints": [
     "static/css/main.f564d487.css",
-    "static/js/main.f63ef8ab.js"
+    "static/js/main.a5b96c23.js"
   ]
 }
