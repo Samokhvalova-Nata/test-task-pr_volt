@@ -32,7 +32,7 @@ export const EditModal = ({ id, title, description, completed, isOpen, onClose }
   return (
     <Modal show={isOpen} onHide={onClose} aria-labelledby="contained-modal-title-vcenter" centered>
       <Modal.Header closeButton>
-        <Modal.Title>Change task</Modal.Title>
+        <Modal.Title>Edit task</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <Form noValidate validated={validated} onSubmit={handleSubmit}>

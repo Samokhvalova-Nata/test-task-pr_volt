@@ -47,7 +47,7 @@ export const TaskForm = () => {
                   <Form.Label>Title</Form.Label>
                   <Form.Control required type="text" autoFocus name="title"/>
                   <Form.Control.Feedback type="invalid">
-                    Enter task description
+                    Enter task title
                   </Form.Control.Feedback>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="description">
