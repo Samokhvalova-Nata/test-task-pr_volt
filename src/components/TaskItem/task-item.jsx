@@ -1,5 +1,8 @@
-import { useDispatch } from "react-redux"
-import { useState } from "react"
+/* eslint-disable max-len */
+/* eslint-disable quote-props */
+/* eslint-disable no-unused-vars */
+import { useDispatch } from 'react-redux'
+import { useState } from 'react'
 import { toast } from 'react-hot-toast'
 import { ImBin, ImPencil } from 'react-icons/im'
 import Button from 'react-bootstrap/Button'
@@ -7,19 +10,19 @@ import Form from 'react-bootstrap/Form'
 import Stack from 'react-bootstrap/Stack'
 import Card from 'react-bootstrap/Card'
 import { deleteTask, toggleCompleted } from 'redux/tasks-slice'
-import { EditModal } from "components/EditModal"
+import { EditModal } from 'components/EditModal'
 
 export const TaskItem = ({ id, title, description, completed }) => {
   const [isShowModal, setIsShowModal] = useState(false)
   const dispatch = useDispatch()
 
   const handleDelete = () => {
-    dispatch(deleteTask(id));
-    toast.success(`${title} is deleted`);  
+    dispatch(deleteTask(id))
+    toast.success(`${title} is deleted`)
   }
 
   const handleToggle = () => dispatch(toggleCompleted(id))
-  const toggleModal = () => setIsShowModal(prev => !prev)
+  const toggleModal = () => setIsShowModal((prev) => !prev)
 
   return (
     <>

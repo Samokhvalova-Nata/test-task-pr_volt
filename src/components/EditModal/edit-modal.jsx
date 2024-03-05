@@ -1,3 +1,6 @@
+/* eslint-disable quote-props */
+/* eslint-disable max-len */
+/* eslint-disable no-unused-vars */
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { toast } from 'react-hot-toast'
@@ -41,12 +44,12 @@ export const EditModal = ({ id, title, description, completed, isOpen, onClose }
           </Form.Group>
           <Form.Group className="mb-3" controlId="title">
             <Form.Label>Title</Form.Label>
-            <Form.Control required type="text" autoFocus name="title" value={taskTitle} onChange={e => setTaskTitle(e.target.value)}/>
+            <Form.Control required type="text" autoFocus name="title" value={taskTitle} onChange={(event) => setTaskTitle(event.target.value)}/>
             <Form.Control.Feedback type="invalid">Enter task title</Form.Control.Feedback>
           </Form.Group>
           <Form.Group className="mb-3" controlId="description">
             <Form.Label>Description</Form.Label>
-              <Form.Control as="textarea" rows={2} name="description" value={taskDescription} onChange={e => setTaskDescription(e.target.value)}/>
+              <Form.Control as="textarea" rows={2} name="description" value={taskDescription} onChange={(event) => setTaskDescription(event.target.value)}/>
           </Form.Group>
           <Stack direction="horizontal" gap={2}>
             <Button type="submit">Save</Button>

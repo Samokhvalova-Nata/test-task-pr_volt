@@ -1,3 +1,6 @@
+/* eslint-disable quote-props */
+/* eslint-disable unicorn/no-array-reduce */
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import Stack from 'react-bootstrap/Stack'
 import { useSelector } from 'react-redux'
@@ -12,10 +15,9 @@ export const TaskCounter = () => {
     } else {
       acc.current += 1
     }
-      return acc
-  }, { current: 0, completed: 0 }
-  )
-  
+    return acc
+  }, { current: 0, completed: 0 })
+
   return (
     <Stack as="div">
       <h5>Tasks</h5>

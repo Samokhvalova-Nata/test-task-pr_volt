@@ -13,6 +13,7 @@ export const TaskList = () => {
       {visibleTasks.length > 0 ? (
         <ListGroup as="ul" className="mx-auto w-50">
           {visibleTasks.map(({ id, title, description, completed }) => (
+            // eslint-disable-next-line max-len
             <TaskItem key={id} id={id} title={title} description={description} completed={completed}/>
           ))}
         </ListGroup>

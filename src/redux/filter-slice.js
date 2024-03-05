@@ -1,3 +1,4 @@
+/* eslint-disable quote-props */
 import { createSlice } from '@reduxjs/toolkit'
 import { statusFilters } from './constants'
 

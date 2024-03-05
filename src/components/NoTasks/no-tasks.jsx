@@ -1,3 +1,6 @@
+/* eslint-disable max-len */
+/* eslint-disable quote-props */
+/* eslint-disable no-unused-vars */
 import Card from 'react-bootstrap/Card'
 
 export const NoTasks = () => {

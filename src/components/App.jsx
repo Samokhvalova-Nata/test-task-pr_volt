@@ -1,6 +1,9 @@
-import { Toaster } from "react-hot-toast"
-import { AppBar } from "./AppBar"
-import { TaskList } from "./TaskList"
+/* eslint-disable unicorn/filename-case */
+/* eslint-disable no-unused-vars */
+
+import { Toaster } from 'react-hot-toast'
+import { AppBar } from './AppBar'
+import { TaskList } from './TaskList'
 
 export const App = () => {
   return (

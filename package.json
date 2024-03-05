@@ -29,8 +29,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "@wemake-services/javascript"
     ]
   },
   "browserslist": {
@@ -44,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@wemake-services/eslint-config-javascript": "^2.1.1"
   }
 }

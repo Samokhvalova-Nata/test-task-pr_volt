@@ -1,3 +1,6 @@
+/* eslint-disable max-len */
+/* eslint-disable max-statements */
+/* eslint-disable no-unused-vars */
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { toast } from 'react-hot-toast'
@@ -17,21 +20,20 @@ export const TaskForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-
     const form = event.currentTarget
     const title = form.elements.title.value
     const description = form.elements.description.value
 
     if (form.checkValidity() === false) {
-      event.stopPropagation();
-    } 
+      event.stopPropagation()
+    }
+    setValidated(true)
 
-    setValidated(true);
     if (validated && title !== '') {
-      dispatch(addTask(title, description));
-      toast.success(`${title} is added`);
-      handleClose();
-    } 
+      dispatch(addTask(title, description))
+      toast.success(`${title} is added`)
+      handleClose()
+    }
   }
 
   return (

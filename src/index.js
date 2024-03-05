@@ -1,3 +1,7 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable unicorn/no-null */
+/* eslint-disable unicorn/prefer-query-selector */
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux'
