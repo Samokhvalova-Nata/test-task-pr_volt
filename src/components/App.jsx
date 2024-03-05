@@ -1,5 +1,5 @@
 import { Toaster } from "react-hot-toast"
-import { AppBar } from "./AppBar/app-bar"
+import { AppBar } from "./AppBar"
 import { TaskList } from "./TaskList"
 
 export const App = () => {
