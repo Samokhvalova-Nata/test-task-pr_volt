@@ -9,7 +9,7 @@ export const StatusFilter = () => {
   return (
     <Form.Select className="ms-auto w-25" aria-label="Complete status" onChange={e => handleFilterChange(e.target.value)}>
       <option value="all">All</option>
-      <option value="active">Active</option>
+      <option value="current">Current</option>
       <option value="completed">Completed</option>
     </Form.Select>
   )

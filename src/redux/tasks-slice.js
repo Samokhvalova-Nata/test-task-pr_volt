@@ -25,7 +25,7 @@ const tasksSlice = createSlice({
             description,
             id: nanoid(),
             completed: false,
-           },
+          },
         };
       },
     },
