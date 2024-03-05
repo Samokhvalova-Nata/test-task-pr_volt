@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable max-len */
 import { useSelector } from 'react-redux'
 import Container from 'react-bootstrap/Container'
 import ListGroup from 'react-bootstrap/ListGroup'
@@ -13,7 +15,6 @@ export const TaskList = () => {
       {visibleTasks.length > 0 ? (
         <ListGroup as="ul" className="mx-auto w-50">
           {visibleTasks.map(({ id, title, description, completed }) => (
-            // eslint-disable-next-line max-len
             <TaskItem key={id} id={id} title={title} description={description} completed={completed}/>
           ))}
         </ListGroup>
