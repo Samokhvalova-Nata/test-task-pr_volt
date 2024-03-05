@@ -12,5 +12,5 @@ export const StatusFilter = () => {
       <option value="active">Active</option>
       <option value="completed">Completed</option>
     </Form.Select>
-  );
-};
+  )
+}

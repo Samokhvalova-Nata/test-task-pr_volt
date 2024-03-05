@@ -29,7 +29,7 @@ export const TaskForm = () => {
     setValidated(true);
     if (validated && title !== '') {
       dispatch(addTask(title, description));
-      toast.success(`Task ${title} added`);
+      toast.success(`${title} is added`);
       handleClose();
     } 
   }
